@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="tampilkan_nama()">KLIK SAYA</button>
+
+    <p>klik input lalu tekan tombol S pada keyboard</p>
+    <label>tekan di dalam sini</label>:<input
+      type="text"
+      size="40"
+      onkeydown="testFunction(event)"
+    />
+  </body>
+  <script>
+    function tampilkan_nama() {
+      alert("halo saudara");
+    }
+    function testFunction(event) {
+      var n = event.key;
+      // Apabila tombol yang di tekan pada keyboard adalah  "s" atau "S" (menggunakan capslock atau shift), maka akan muncul alert.
+      if (n == "s" || n == "S") {
+        alert("Selamat Belajar!");
+      }
+    }
+  </script>
+</html>
